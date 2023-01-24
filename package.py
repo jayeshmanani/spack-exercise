@@ -36,5 +36,5 @@ class SpackExercise(CMakePackage):
     version("0.2.0", sha256="c421df16911fd774aa072d7f6dd1746d0890918f7d0661202771382fbc9cf3db")
     version("0.3.0", sha256="53f926a12a5dfee9c6ae20f979a9da5b8b128178f150fc9ea4427ac06876588d")
     
-    depends_on('yaml-cpp', when='@0.3.0:')
-    depends_on('boost', when='@0.2.0:')
+    depends_on('yaml-cpp@0.7.0:', when='@0.3.0:')
+    depends_on('boost@1.65.1', when='@0.2.0:')
